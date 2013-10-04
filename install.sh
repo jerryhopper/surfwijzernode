@@ -9,7 +9,7 @@ else
 		echo "UPDATING LOCAL CODE WITH LATEST VERSION"
 		cd $Directory
 		git pull
-		exec "/usr/local/surfwijzer/setup/install.sh"
+		sudo sh /usr/local/surfwijzer/setup/install.sh
 		exit 0
 	else
 		echo "UPDATING LOCAL CODE WITH LATEST VERSION"
@@ -17,7 +17,7 @@ else
 		sudo apt-get install git
 		cd $Directory
 		git clone git://github.com/jerryhopper/surfwijzernode $Directory
-		exec "/usr/local/surfwijzer/setup/update.sh"
+		sudo sh /usr/local/surfwijzer/setup/update.sh
 		exit 0
 	fi	
 	
