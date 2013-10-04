@@ -1,5 +1,6 @@
 #!/bin/bash
 OSVERSION=`cat /etc/issue.net`
+printf "\033c"
 if [ "$OSVERSION" != "Ubuntu 12.04.3 LTS" ]; then
 	echo "no good"
 else
