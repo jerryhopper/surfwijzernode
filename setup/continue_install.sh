@@ -13,3 +13,8 @@ sudo make
 sudo make install
 sudo make clean
 
+
+sudo cp /usr/local/surfwijzer/setup/dansguardian-2.12.0.3/data/scripts/bsd-init /etc/init.d/dansguardian
+sudo chmod 777 /etc/init.d/dansguardian
+
+ls
