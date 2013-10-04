@@ -12,7 +12,7 @@ else
 		sudo apt-get install git
 		cd $Directory
 		git pull
-		sudo sh /usr/local/surfwijzer/setup/update.sh
+		sudo sh /usr/local/surfwijzer/setup/continue_update.sh
 		exit 0
 	else
 		echo "NOTHING"
@@ -20,7 +20,7 @@ else
 		sudo mkdir $Directory
 		cd $Directory
 		git clone git://github.com/jerryhopper/surfwijzernode $Directory
-		sudo sh /usr/local/surfwijzer/setup/install.sh
+		sudo sh /usr/local/surfwijzer/setup/continue_install.sh
 		exit 0
 	fi	
 	
